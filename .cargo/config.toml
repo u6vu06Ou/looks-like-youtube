@@ -1,0 +1,8 @@
+[build]
+# 把本機路徑從 exe 的除錯字串裡洗掉，換成中性寫法。
+# 這兩條是作者機器上的路徑，別人 clone 之後比對不到、不會生效，也不會壞；
+# 想讓自己的路徑也乾淨，就把下面兩條換成你的目錄。
+rustflags = [
+  "--remap-path-prefix=D:\\oss\\looks-like-youtube=.",
+  "--remap-path-prefix=C:\\Users\\User\\.cargo=~/.cargo",
+]
